@@ -1,0 +1,279 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ernest Ajieh BA Portfolio - Design System
+   Clean, professional palette with deep slate blues and warm amber accents
+   All colours in HSL format
+*/
+
+@layer base {
+  :root {
+    /* Core palette - Professional slate with warm amber accent */
+    --background: 210 20% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Primary - Deep slate blue */
+    --primary: 222 47% 11%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Secondary - Soft slate */
+    --secondary: 215 25% 93%;
+    --secondary-foreground: 222 47% 11%;
+
+    /* Muted - Subtle grey */
+    --muted: 215 20% 94%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent - Warm amber for CTAs and highlights */
+    --accent: 38 92% 50%;
+    --accent-foreground: 222 47% 11%;
+
+    /* Accent secondary - Teal for secondary actions */
+    --accent-secondary: 173 58% 39%;
+    --accent-secondary-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 25% 88%;
+    --input: 215 25% 88%;
+    --ring: 222 47% 11%;
+
+    --radius: 0.5rem;
+
+    /* Custom tokens for portfolio */
+    --hero-gradient-start: 222 47% 11%;
+    --hero-gradient-end: 215 28% 17%;
+    
+    --section-alt: 215 20% 96%;
+    
+    --chip-bg: 215 25% 93%;
+    --chip-text: 222 47% 25%;
+    
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+
+    /* Sidebar tokens */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 96%;
+
+    --card: 222 47% 9%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 222 47% 9%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 210 40% 96%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 215 28% 17%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted: 215 28% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 38 92% 50%;
+    --accent-foreground: 222 47% 11%;
+
+    --accent-secondary: 173 58% 39%;
+    --accent-secondary-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 28% 20%;
+    --input: 215 28% 20%;
+    --ring: 210 40% 80%;
+
+    --hero-gradient-start: 222 47% 8%;
+    --hero-gradient-end: 215 28% 12%;
+    
+    --section-alt: 222 47% 8%;
+    
+    --chip-bg: 215 28% 20%;
+    --chip-text: 215 20% 75%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Hero section gradient background */
+  .hero-gradient {
+    @apply bg-gradient-to-br from-primary to-secondary;
+  }
+
+  /* Section with alternate background */
+  .section-alt {
+    background-color: hsl(var(--section-alt));
+  }
+
+  /* Chip/tag styling */
+  .chip {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+    background-color: hsl(var(--chip-bg));
+    color: hsl(var(--chip-text));
+  }
+
+  /* Card hover effect */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  /* Accent button */
+  .btn-accent {
+    @apply bg-accent text-accent-foreground hover:bg-accent/90 font-semibold;
+  }
+
+  /* Secondary accent button */
+  .btn-accent-secondary {
+    background-color: hsl(var(--accent-secondary));
+    color: hsl(var(--accent-secondary-foreground));
+  }
+
+  .btn-accent-secondary:hover {
+    background-color: hsl(var(--accent-secondary) / 0.9);
+  }
+
+  /* Timeline connector */
+  .timeline-connector {
+    @apply absolute left-4 top-8 bottom-0 w-0.5 bg-border;
+  }
+
+  /* Focus ring for accessibility */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+
+  /* Container with max-width */
+  .container-narrow {
+    @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Prose-like styling for case study content */
+  .prose-content {
+    @apply text-foreground/90 leading-relaxed;
+  }
+
+  .prose-content p {
+    @apply mb-4;
+  }
+
+  .prose-content ul {
+    @apply list-disc pl-6 mb-4 space-y-2;
+  }
+
+  .prose-content li {
+    @apply text-foreground/85;
+  }
+
+  /* Skill badge */
+  .skill-badge {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary text-secondary-foreground text-sm font-medium transition-colors hover:bg-secondary/80;
+  }
+
+  /* Domain tag colours */
+  .domain-banking {
+    @apply bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300;
+  }
+
+  .domain-public-sector {
+    @apply bg-emerald-100 text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300;
+  }
+
+  .domain-consulting {
+    @apply bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300;
+  }
+
+  .domain-data {
+    @apply bg-cyan-100 text-cyan-800 dark:bg-cyan-900/30 dark:text-cyan-300;
+  }
+
+  .domain-lms {
+    @apply bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300;
+  }
+
+  .domain-automation {
+    @apply bg-rose-100 text-rose-800 dark:bg-rose-900/30 dark:text-rose-300;
+  }
+
+  .domain-change {
+    @apply bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300;
+  }
+}
+
+@layer utilities {
+  /* Animation delays for staggered effects */
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+}

@@ -19,7 +19,7 @@ export interface Achievement {
 export const experiences: Experience[] = [
   {
     id: "innoedge",
-    title: "AI Business Analyst",
+    title: "Business Analyst",
     company: "InnoEdge Limited",
     location: "United Kingdom",
     dates: "Sep 2024 – Present",

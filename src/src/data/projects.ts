@@ -158,19 +158,19 @@ export const projects: Project[] = [
     ],
     outcomes: [
       {
-        metric: "Customer onboarding completion rate",
-        value: "Higher completion targeted",
-        context: "Strengthened by clearer stage messaging, fewer avoidable failures, and a more transparent onboarding journey.",
+        metric: "Swim lanes mapped",
+        value: "6",
+        context: "The onboarding journey was mapped across customer, platform, automated checks, operations, compliance, and support touchpoints.",
       },
       {
-        metric: "ID&V first-time success rate",
-        value: "First-pass success improved",
-        context: "Enabled by better upload guidance, clearer validation messages, and more robust exception handling.",
+        metric: "Stakeholder groups aligned",
+        value: "6",
+        context: "Discovery brought together the operational, product, compliance, fraud, support, and technology teams behind a shared improvement view.",
       },
       {
-        metric: "Manual review rework reduction",
-        value: "Rework reduced",
-        context: "Driven by clearer handoffs, better exception routing, and fewer duplicate review loops.",
+        metric: "Key pain points prioritised",
+        value: "5",
+        context: "The most critical onboarding friction points were translated into delivery-ready requirements and improvement priorities.",
       },
     ],
     artefacts: [
@@ -272,19 +272,19 @@ export const projects: Project[] = [
     ],
     outcomes: [
       {
-        metric: "Query deflection rate",
-        value: "Deflection opportunity created",
-        context: "Structured self-service flows were designed to resolve common onboarding queries without human intervention.",
+        metric: "Core query paths designed",
+        value: "4",
+        context: "The chatbot experience was structured around the highest-volume onboarding support journeys, including upload help, ID&V troubleshooting, status guidance, and escalation routes.",
       },
       {
-        metric: "Customer satisfaction score",
-        value: "Consistency strengthened",
-        context: "Response quality, tone, and policy compliance were built into the conversation design and review process.",
+        metric: "Stakeholder teams aligned",
+        value: "4",
+        context: "Customer support, product, compliance, and operations teams were aligned around chatbot scope, content, and escalation rules.",
       },
       {
-        metric: "Escalation handling time",
-        value: "Escalation flow streamlined",
-        context: "Clearer escalation criteria and structured handoff design reduced friction when human support was needed.",
+        metric: "Conversation artefacts produced",
+        value: "4",
+        context: "The delivery pack included flow designs, knowledge structures, escalation rules, and a full UAT test pack.",
       },
     ],
     artefacts: [
@@ -395,14 +395,14 @@ export const projects: Project[] = [
     ],
     outcomes: [
       {
-        metric: "Requirements coverage",
-        value: "Broad coverage achieved",
-        context: "Stakeholder needs were captured across learner journeys, administration, compliance, and reporting.",
+        metric: "Stakeholder groups engaged",
+        value: "5",
+        context: "Requirements were shaped with input from learning, people, technology, compliance, and business representatives.",
       },
       {
-        metric: "Backlog readiness",
-        value: "Implementation-ready backlog",
-        context: "Stories and acceptance criteria were prepared to support phased implementation and vendor conversations.",
+        metric: "Delivery artefacts prepared",
+        value: "6",
+        context: "The LMS discovery produced a structured specification, backlog, role matrix, NFRs, vendor criteria, and supporting documentation.",
       },
     ],
     artefacts: [
@@ -628,14 +628,14 @@ export const projects: Project[] = [
         context: "HR, Finance, and Operations dashboards delivered.",
       },
       {
-        metric: "Reporting lag reduction",
-        value: "Reporting cycles accelerated",
-        context: "The shift away from manual reporting improved speed and moved teams closer to near real-time visibility.",
+        metric: "Functions covered",
+        value: "3",
+        context: "The reporting rollout delivered cross-functional visibility for HR, Finance, and Operations.",
       },
       {
-        metric: "Data quality improvement",
-        value: "Data confidence increased",
-        context: "Validation checks and reconciliation routines improved trust in the reported figures.",
+        metric: "Reporting confidence strengthened",
+        value: "Improved",
+        context: "Validation checks and reconciliation routines increased trust in the reported figures and reduced reliance on manual correction.",
       },
     ],
     artefacts: [
@@ -741,19 +741,19 @@ export const projects: Project[] = [
     ],
     outcomes: [
       {
-        metric: "Service efficiency improvement",
-        value: "Efficiency strengthened",
-        context: "Recommendations and process redesign work supported more efficient operating models.",
+        metric: "Sectors supported",
+        value: "3+",
+        context: "Assignments spanned healthcare, education, housing, and broader public-sector transformation work.",
       },
       {
-        metric: "Scorecard adoption",
-        value: "Frameworks embedded",
-        context: "Templates and dashboards were adopted to support more consistent performance tracking and reporting.",
+        metric: "Engagement span",
+        value: "5+ years",
+        context: "Consulting work covered multi-year assignments across organisational change, process improvement, and performance management.",
       },
       {
-        metric: "Client satisfaction",
-        value: "Trusted delivery achieved",
-        context: "Engagements were underpinned by strong stakeholder relationships and dependable delivery support.",
+        metric: "Performance frameworks embedded",
+        value: "Multiple",
+        context: "Scorecards, dashboards, and reporting frameworks were introduced to support more consistent performance management.",
       },
     ],
     artefacts: [

@@ -623,14 +623,14 @@ export const projects: Project[] = [
     ],
     outcomes: [
       {
-        metric: "Dashboard deployment",
-        value: "3 functions",
-        context: "HR, Finance, and Operations dashboards delivered.",
+        metric: "Dashboard rollout",
+        value: "3 live dashboards",
+        context: "Live dashboards were delivered for HR, Finance, and Operations teams.",
       },
       {
-        metric: "Functions covered",
-        value: "3",
-        context: "The reporting rollout delivered cross-functional visibility for HR, Finance, and Operations.",
+        metric: "Decision-making coverage",
+        value: "3 core functions",
+        context: "Leaders gained a shared reporting view across people, financial, and operational performance.",
       },
       {
         metric: "Reporting confidence strengthened",
@@ -842,3 +842,4 @@ export const filterProjects = (
     return true;
   });
 };
+

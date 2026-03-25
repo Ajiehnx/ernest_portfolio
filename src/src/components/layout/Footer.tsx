@@ -20,7 +20,6 @@ export const Footer = () => {
 
       <div className="container-wide py-12">
         <div className="flex flex-col sm:flex-row justify-between gap-10">
-          {/* Brand + socials */}
           <div className="space-y-4">
             <Link to="/" className="inline-block group">
               <h3 className="font-display text-2xl group-hover:text-accent transition-colors duration-300">
@@ -28,10 +27,10 @@ export const Footer = () => {
               </h3>
             </Link>
             <p className="text-xs text-primary-foreground/30 tracking-wide mt-1">
-              Turning complexity into clarity, one process at a time.
+              Turning complex change into clear decisions, stronger requirements, and better delivery outcomes.
             </p>
             <div className="flex gap-2">
-              {profile.socialLinks.linkedin && profile.socialLinks.linkedin !== "[Add LinkedIn URL]" && (
+              {profile.socialLinks.linkedin && (
                 <a
                   href={profile.socialLinks.linkedin}
                   target="_blank"
@@ -42,7 +41,7 @@ export const Footer = () => {
                   <Linkedin className="h-3.5 w-3.5 text-primary-foreground/30 group-hover/icon:text-accent transition-colors" />
                 </a>
               )}
-              {profile.socialLinks.github && profile.socialLinks.github !== "[Add GitHub URL if applicable]" && (
+              {profile.socialLinks.github && (
                 <a
                   href={profile.socialLinks.github}
                   target="_blank"
@@ -56,7 +55,6 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* Links */}
           <nav className="flex flex-wrap gap-x-8 gap-y-2" aria-label="Footer navigation">
             {footerLinks.map((link) => (
               <Link
@@ -72,17 +70,16 @@ export const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom bar */}
       <div className="border-t border-primary-foreground/[0.06]">
         <div className="container-wide py-4 flex flex-col sm:flex-row justify-between items-center gap-2">
           <p className="text-[11px] text-primary-foreground/20 tracking-wide">
-            © {currentYear} {profile.displayName}. All rights reserved.
+            Copyright {currentYear} {profile.displayName}. All rights reserved.
           </p>
           <Link
             to="/privacy"
             className="text-[11px] text-primary-foreground/20 hover:text-primary-foreground/40 transition-colors tracking-wide"
           >
-            Privacy Policy
+            Privacy Notice
           </Link>
         </div>
       </div>

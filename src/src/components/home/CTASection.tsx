@@ -15,10 +15,10 @@ export const CTASection = () => {
         <Reveal direction="scale">
           <span className="text-xs font-medium tracking-[0.25em] uppercase text-accent">Get in Touch</span>
           <h2 className="font-display text-display md:text-display-lg mt-6 mb-8 leading-[1.05]">
-            Let's work <em className="italic">together</em>
+            Bring clarity to your next <em className="italic">delivery challenge</em>
           </h2>
           <p className="text-primary-foreground/50 max-w-lg mx-auto mb-12 text-lg leading-relaxed">
-            Looking for a Business Analyst who can bridge business needs and technical delivery?
+            If you need a Business Analyst who can shape requirements, align stakeholders, and keep delivery moving, let's start the conversation.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button
@@ -28,7 +28,7 @@ export const CTASection = () => {
             >
               <a href={profile.socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-4 w-4" />
-                Contact me via LinkedIn
+                Start a conversation
               </a>
             </Button>
             <Button
@@ -39,7 +39,7 @@ export const CTASection = () => {
             >
               <a href={profile.cvDownloadUrl} target="_blank" rel="noopener noreferrer">
                 <FileDown className="h-4 w-4" />
-                Download CV
+                View CV
               </a>
             </Button>
           </div>

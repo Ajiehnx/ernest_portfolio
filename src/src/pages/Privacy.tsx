@@ -2,7 +2,7 @@ import { Layout } from "@/components/layout/Layout";
 import { profile } from "@/data/profile";
 
 const Privacy = () => {
-  const lastUpdated = "February 2025";
+  const lastUpdated = "23 March 2026";
 
   return (
     <Layout>
@@ -41,8 +41,9 @@ const Privacy = () => {
                 subject, and message content when you submit the contact form.
               </li>
               <li>
-                <strong>Technical data:</strong> [If analytics are used: IP address, browser type, 
-                device type, pages visited, and time spent on site through analytics tools.]
+                <strong>Technical data:</strong> Basic technical information that may be created by your
+                browser or hosting platform when you access the website, such as your browser type,
+                device type, and the pages you view.
               </li>
             </ul>
           </div>
@@ -53,7 +54,7 @@ const Privacy = () => {
             <ul>
               <li>Respond to your enquiries and messages</li>
               <li>Consider potential working opportunities you may present</li>
-              <li>[If analytics are used: Understand how visitors use this website to improve its content and functionality]</li>
+              <li>Maintain, protect, and improve the content and functionality of this website</li>
             </ul>
           </div>
 
@@ -67,7 +68,7 @@ const Privacy = () => {
               </li>
               <li>
                 <strong>Consent:</strong> Where you have provided explicit consent, such as for 
-                marketing communications (if applicable).
+                any information you choose to share voluntarily.
               </li>
             </ul>
           </div>
@@ -103,28 +104,27 @@ const Privacy = () => {
           <div>
             <h2 className="text-xl font-bold mb-4">Cookies</h2>
             <p>
-              [If cookies are used: This website uses cookies to improve your browsing experience 
-              and to analyse site traffic. You can control cookie settings through your browser preferences.]
+              This website is designed to operate without intrusive tracking. If the hosting platform
+              or essential site tooling uses basic cookies or similar technologies, they are used only
+              where necessary to support site performance, security, or core functionality.
             </p>
-            <p>
-              [If no cookies are used: This website does not use cookies for tracking or analytics purposes.]
-            </p>
+            <p>You can manage cookie preferences through your browser settings.</p>
           </div>
 
           <div>
             <h2 className="text-xl font-bold mb-4">Third-Party Services</h2>
             <p>
-              [If third-party services are used: This website may use the following third-party services 
-              that may collect data:]
+              This website may rely on carefully selected third-party services to support hosting,
+              document sharing, and professional contact channels.
             </p>
             <ul>
-              <li>[Add any analytics services, e.g., Google Analytics]</li>
-              <li>[Add any hosting services]</li>
-              <li>[Add any form handling services]</li>
+              <li>Website hosting and infrastructure providers</li>
+              <li>LinkedIn, when you choose to visit my professional profile</li>
+              <li>Google Drive, when you choose to open or download my CV</li>
             </ul>
             <p>
-              [If no third-party services are used: This website does not share your personal data 
-              with third-party services.]
+              These providers process data under their own privacy terms where applicable. I do not
+              sell your personal data or knowingly share it for advertising purposes.
             </p>
           </div>
 
@@ -171,9 +171,8 @@ const Privacy = () => {
           <div className="pt-8 border-t text-sm text-muted-foreground">
             <p>
               <em>
-                Note: This privacy notice is provided for general information purposes and does not 
-                constitute legal advice. Please consult with a legal professional for specific 
-                guidance on data protection compliance.
+                This notice is intended to explain, in plain language, how personal information is
+                handled through this portfolio website.
               </em>
             </p>
           </div>

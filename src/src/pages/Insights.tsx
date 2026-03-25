@@ -17,10 +17,9 @@ const Insights = () => {
     <Layout>
       <PageHeader
         title="Insights"
-        description="Reflections on business analysis practice, drawing from real project experience. No invented stories—just practical lessons learned."
+        description="Reflections on business analysis practice drawn from real project experience, practical delivery lessons, and service improvement work."
       />
 
-      {/* Filter */}
       <section className="py-8 border-b border-border/50">
         <div className="container-wide">
           <Reveal>
@@ -55,7 +54,6 @@ const Insights = () => {
         </div>
       </section>
 
-      {/* Insights Grid */}
       <section className="py-16 md:py-24">
         <div className="container-wide">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -1,37 +1,37 @@
 export const profile = {
   name: "Chukwuwike Ernest Ajieh",
   displayName: "Ernest Ajieh",
-  title: "Business Analyst",
+  title: "Senior Business Analyst",
   phone: "07300 926262",
   email: "ernest.c.ajieh@gmail.com",
   location: "United Kingdom",
   
-  headline: "Business Analyst with 7+ years' experience across digital transformation, data analytics, and AI-driven automation.",
+  headline: "Senior Business Analyst with 7+ years of experience delivering digital transformation, data insight, and AI-enabled change across complex organisations.",
   
-  summary: `Skilled at identifying high-value use cases, translating business needs into clear requirements and user stories, and supporting delivery through structured governance and stakeholder engagement. Experienced in process mapping (BPMN), Power BI, and agile delivery (Azure DevOps/Jira), with practical project experience spanning digital onboarding improvement for a commercial bank, conversational AI chatbot support, and LMS requirements.`,
+  summary: `I help organisations turn ambiguity into well-defined delivery plans. My work spans discovery, stakeholder facilitation, requirements engineering, process mapping, service improvement, and delivery support across banking, public sector, and enterprise change initiatives. With hands-on experience in BPMN, Power BI, Azure DevOps, Jira, and AI-focused initiatives, I bring structure, momentum, and clarity from early problem framing through to implementation.`,
   
   valueProposition: [
-    "Bridging business needs and technical delivery with clarity and precision",
-    "7+ years delivering across banking, public sector, and enterprise digital transformation",
-    "Practical experience in AI automation, digital onboarding, and data-driven decision making"
+    "I bridge business priorities and delivery teams with clear requirements, structured decision-making, and practical stakeholder alignment.",
+    "I bring experience across banking, public sector, and enterprise transformation programmes where clarity, governance, and pace all matter.",
+    "I combine business analysis craft with hands-on exposure to AI automation, digital onboarding, and data-led performance improvement."
   ],
   
   strengths: [
     {
       title: "Discovery to Delivery",
-      description: "From stakeholder workshops to go-live, ensuring requirements translate into working solutions"
+      description: "From early discovery and process mapping through to implementation support, I help teams move from ambiguity to delivery."
     },
     {
       title: "Clear Communication",
-      description: "Translating complex needs into concise documentation that developers, testers, and stakeholders understand"
+      description: "I turn complex needs into concise artefacts that developers, testers, and stakeholders can act on with confidence."
     },
     {
       title: "Structured Governance",
-      description: "RAID logs, sprint ceremonies, and stakeholder reporting that keep projects on track"
+      description: "I keep programmes moving with disciplined governance, visible risks, and reporting that supports timely decisions."
     },
     {
       title: "Data-Informed Decisions",
-      description: "Power BI dashboards and KPI frameworks that enable evidence-based action"
+      description: "I use dashboards, KPI frameworks, and practical analysis to help teams make evidence-based improvements."
     }
   ],
   
@@ -47,14 +47,14 @@ export const profile = {
   
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/ernest-ajieh-876ba8107/",
-    github: "[Add GitHub URL if applicable]"
+    github: ""
   }
 };
 
 export const siteMetadata = {
-  title: "Ernest Ajieh | Business Analyst Portfolio",
-  description: "Business Analyst with 7+ years' experience across digital transformation, data analytics, and AI-driven automation. View projects, case studies, and professional experience.",
-  siteUrl: "[Add production URL]",
-  ogImage: "[Add OG image URL]",
-  twitterHandle: "[Add Twitter handle if applicable]"
+  title: "Ernest Ajieh | Senior Business Analyst Portfolio",
+  description: "Senior Business Analyst portfolio featuring digital transformation case studies, delivery experience, certifications, and practical insight across data, onboarding, and AI-enabled change.",
+  siteUrl: "/",
+  ogImage: "/favicon.ico",
+  twitterHandle: ""
 };

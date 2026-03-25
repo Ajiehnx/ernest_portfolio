@@ -14,7 +14,6 @@ const About = () => {
     <Layout>
       <PageHeader title="About Me" description={profile.headline} />
 
-      {/* Summary with Photo */}
       <section className="py-16 md:py-24">
         <div className="container-wide">
           <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-start">
@@ -23,7 +22,7 @@ const About = () => {
                 <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden ring-1 ring-border/50 shadow-medium">
                   <img
                     src={profileHeadshot}
-                    alt="Ernest Ajieh – Business Analyst"
+                    alt="Ernest Ajieh - Business Analyst"
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
@@ -33,16 +32,13 @@ const About = () => {
               <div className="flex-1">
                 <p className="text-sm font-semibold text-accent tracking-wide uppercase mb-2">Overview</p>
                 <h2 className="text-title font-bold mb-6">Professional Summary</h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  {profile.summary}
-                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">{profile.summary}</p>
               </div>
             </Reveal>
           </div>
         </div>
       </section>
 
-      {/* Strengths */}
       <section className="section-alt py-16 md:py-24">
         <div className="container-wide">
           <Reveal>
@@ -76,15 +72,14 @@ const About = () => {
         </div>
       </section>
 
-      {/* Domains */}
       <section className="py-16 md:py-24">
         <div className="container-wide">
           <Reveal>
             <p className="text-sm font-semibold text-accent tracking-wide uppercase mb-2">Sectors</p>
             <h2 className="text-title font-bold mb-6">Domains & Sectors</h2>
             <p className="text-muted-foreground mb-8 max-w-2xl">
-              Experience across diverse sectors, with particular depth in financial services,
-              public sector, and enterprise digital transformation.
+              Experience across diverse sectors, with particular depth in financial services, public
+              sector, and enterprise digital transformation.
             </p>
           </Reveal>
           <Reveal delay={100}>
@@ -99,7 +94,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Approach */}
       <section className="section-alt py-16 md:py-24">
         <div className="container-wide">
           <Reveal>
@@ -110,15 +104,15 @@ const About = () => {
             {[
               {
                 title: "Clarity Over Complexity",
-                text: "Requirements should be clear enough for developers to build and testers to verify. If it's not testable, it's not a requirement.",
+                text: "Requirements should be clear enough for developers to build and testers to verify. If it is not testable, it is not ready.",
               },
               {
                 title: "Outcomes Over Outputs",
-                text: "Delivering features isn't success—delivering value is. I focus on what the business actually needs, not just what was asked for.",
+                text: "Delivering features is not the goal on its own. I focus on measurable value, adoption, and outcomes that matter to the business.",
               },
               {
                 title: "Collaboration Over Handoffs",
-                text: "The best solutions emerge from genuine partnership between business and technology, not throwing documents over the wall.",
+                text: "The strongest solutions come from genuine partnership between business and technology, not documents thrown over the wall.",
               },
             ].map((item, index) => (
               <Reveal key={index} delay={index * 100}>
@@ -132,14 +126,13 @@ const About = () => {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-16 md:py-24">
         <div className="container-wide text-center">
           <Reveal>
             <h2 className="text-title font-bold mb-4">Interested in Working Together?</h2>
             <p className="text-muted-foreground mb-10 max-w-2xl mx-auto">
-              I'm open to UK-based Business Analyst opportunities. Let's discuss how I can
-              contribute to your team.
+              I am open to UK-based Business Analyst opportunities and consulting conversations where
+              thoughtful analysis can accelerate delivery.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" className="rounded-full gap-2 active:scale-[0.97] transition-all" asChild>

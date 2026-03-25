@@ -10,7 +10,7 @@ const Contact = () => {
     <Layout>
       <PageHeader
         title="Contact"
-        description="Interested in working together? I'd love to hear from you."
+        description="Open to conversations about Business Analyst, Senior BA, and transformation-focused opportunities."
       />
 
       <section className="py-20 md:py-28">
@@ -31,8 +31,7 @@ const Contact = () => {
 
           <Reveal delay={200}>
             <p className="mt-8 text-foreground/70 leading-relaxed max-w-lg mx-auto">
-              I'm currently exploring UK-based Business Analyst and Senior BA roles.
-              Happy to discuss contract or permanent positions. The best way to reach me is via LinkedIn.
+              I welcome conversations about permanent, contract, and consulting opportunities where strong business analysis can improve delivery outcomes. LinkedIn is the best place to reach me directly.
             </p>
           </Reveal>
 
@@ -45,7 +44,7 @@ const Contact = () => {
               >
                 <a href={profile.socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-4 w-4" />
-                  Contact me via LinkedIn
+                  Message me on LinkedIn
                 </a>
               </Button>
             </div>
@@ -54,8 +53,7 @@ const Contact = () => {
           <Reveal delay={400}>
             <div className="mt-12 border border-accent/20 bg-accent/[0.03] p-6 text-left">
               <p className="text-sm text-foreground/70 leading-relaxed">
-                <strong className="text-foreground">Open to opportunities:</strong> I'm currently exploring UK-based
-                Business Analyst and Senior BA roles. Happy to discuss contract or permanent positions.
+                <strong className="text-foreground">Best fit:</strong> Business Analyst, Senior BA, digital transformation, service improvement, and AI-enabled change initiatives in the UK.
               </p>
             </div>
           </Reveal>

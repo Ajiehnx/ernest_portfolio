@@ -18,7 +18,6 @@ export const HeroSection = () => {
   return (
     <section className="relative overflow-hidden bg-primary text-primary-foreground min-h-[100vh] flex items-center cursor-none" data-custom-cursor>
       <CustomCursor />
-      {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-primary via-primary to-primary/90" />
         <div className="absolute top-[20%] right-[10%] w-[600px] h-[600px] bg-accent/[0.04] rounded-full blur-[160px]" />
@@ -29,16 +28,13 @@ export const HeroSection = () => {
 
       <div className="relative container-wide w-full pt-28 pb-16 md:pt-32 md:pb-20">
         <div className="grid lg:grid-cols-[1.2fr_1fr] items-center gap-12 lg:gap-8">
-          {/* Text — left */}
           <div className="order-2 lg:order-1">
-            {/* Eyebrow */}
             <div className={`${reveal(0)} mb-6`} style={{ transitionDelay: "200ms" }}>
               <span className="text-xs font-medium tracking-[0.25em] uppercase text-accent">
                 {profile.title}
               </span>
             </div>
 
-            {/* Name */}
             <h1
               className={`font-display text-5xl sm:text-6xl md:text-7xl lg:text-display-xl leading-[0.95] ${reveal(1)}`}
               style={{ transitionDelay: "350ms" }}
@@ -47,13 +43,11 @@ export const HeroSection = () => {
               <span className="block italic text-accent">{profile.displayName.split(" ").slice(1).join(" ")}</span>
             </h1>
 
-            {/* Animated line */}
             <div
               className={`h-[1px] bg-accent/30 my-8 origin-left ${mounted ? "animate-line-grow" : "scale-x-0"}`}
               style={{ maxWidth: "200px", animationDelay: "600ms" }}
             />
 
-            {/* Headline */}
             <p
               className={`text-lg md:text-xl text-primary-foreground/55 leading-relaxed max-w-xl ${reveal(3)}`}
               style={{ transitionDelay: "700ms", textWrap: "pretty" } as React.CSSProperties}
@@ -61,7 +55,6 @@ export const HeroSection = () => {
               {profile.headline}
             </p>
 
-            {/* Stats */}
             <div
               className={`flex gap-10 sm:gap-12 mt-10 ${reveal(4)}`}
               style={{ transitionDelay: "850ms" }}
@@ -82,7 +75,6 @@ export const HeroSection = () => {
               ))}
             </div>
 
-            {/* CTAs */}
             <div
               className={`flex flex-wrap gap-4 mt-12 ${reveal(5)}`}
               style={{ transitionDelay: "1000ms" }}
@@ -111,13 +103,11 @@ export const HeroSection = () => {
             </div>
           </div>
 
-          {/* Profile image — right, in grid flow */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-start lg:self-start lg:mt-8">
             <ProfileImageTransition mounted={mounted} />
           </div>
         </div>
 
-        {/* Scroll indicator */}
         <div
           className={`mt-16 lg:mt-12 hidden lg:flex items-center gap-2 text-primary-foreground/20 ${reveal(6)}`}
           style={{ transitionDelay: "1200ms" }}

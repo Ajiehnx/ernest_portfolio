@@ -71,7 +71,7 @@ const ProjectDetail = () => {
               <Clock className="h-4 w-4" />
               {project.duration}
             </span>
-            {project.teamSize !== "[Add team size]" && (
+            {project.teamSize && (
               <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary-foreground/10 rounded-full text-sm">
                 Team: {project.teamSize}
               </span>
@@ -168,7 +168,7 @@ const ProjectDetail = () => {
                     <CardContent>
                       <p className="text-sm text-muted-foreground">{project.approach.asIs}</p>
                       <div className="mt-4 p-8 bg-muted rounded-lg text-center text-sm text-muted-foreground border-2 border-dashed">
-                        [As-Is BPMN Diagram Placeholder]
+                        Process visual available on request
                       </div>
                     </CardContent>
                   </Card>
@@ -179,7 +179,7 @@ const ProjectDetail = () => {
                     <CardContent>
                       <p className="text-sm text-muted-foreground">{project.approach.toBe}</p>
                       <div className="mt-4 p-8 bg-muted rounded-lg text-center text-sm text-muted-foreground border-2 border-dashed">
-                        [To-Be BPMN Diagram Placeholder]
+                        Future-state visual available on request
                       </div>
                     </CardContent>
                   </Card>
@@ -295,7 +295,7 @@ const ProjectDetail = () => {
                             <Download className="h-4 w-4 text-muted-foreground hover:text-foreground" />
                           </a>
                         ) : (
-                          <span className="shrink-0 text-xs text-muted-foreground">[Add link]</span>
+                          <span className="shrink-0 text-xs text-muted-foreground">Available on request</span>
                         )}
                       </div>
                       <p className="text-xs text-muted-foreground mt-2">{artefact.description}</p>
